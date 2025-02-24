@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MY Shop | E-Commerce Website</title>
+        
+        <!-- CDN of CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"/>
+            <!-- End of CSS CDN -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-- header Section -->
+    <nav class="navbar navbar-expand-lg bg-custom">
+      <a class="navbar-brand" href="#"><img src="Images/Main.png">My Shop</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i>Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-bag-fill"></i>Shop</a>
+          </li>
+          
+          <!-- This is Dropdown -->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-bookmark-check-fill"></i>Category
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Smatrphones</a>
+          <a class="dropdown-item" href="#">Shirts</a>
+          <a class="dropdown-item" href="#">Watches</a>
+          </div>
+          </li>
+          <!-- Droopdown End -->                    
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi bi-person-lines-fill"></i>Contact us</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <button class="btn btn-success" data-target="#registermodal" data-toggle="modal"><i class="bi bi-person-fill-add"></i>Register</button>
+          <button class="btn btn-success"data-target="#loginmodal" data-toggle="modal"><i class="bi bi-box-arrow-in-right"></i>Login</button>
+        </span>
+      </div>
+    </nav>
+    <!-- End of header Section -->
+
+<!-- Hero Section -->
+<div class="jumbotron">
+  
+  <div class="row justify-content-around align-items-center">
+      <div>
+        <h1>Special Discount !!!</h1>
+        <h2>Category - <span id="changetext"></span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="btn btn-success"><i class="bi bi-bag-fill"></i>Shop now</button>
+      </div>
+
+      <div>
+        <img src="Images/Background.png">
+      </div>
+  </div>
+
+</div>
+<!-- End of Hero Section -->
+
+<!-- Rating Section -->
+<div class="container" id="rating">
+  <h1>Our <span id="span">Ratings</span></h1>
+  <hr width="250px" class="bg-danger">
+  <div class="row text-center my-5">
+    <div class="col-md-3">
+      <div class="card text-center">
+        <div class="card-body">
+          <img src="Images/goog.png" width="60px">
+        </div>
+        <div class="card-footer">
+          <h4>Rating 4.5</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/fb.png" width="100px">
+        </div>
+        <div class="card-footer">
+          <h4>Rating 5</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/goog.png" width="60px">
+        </div>
+        <div class="card-footer">
+          <h4>Rating 4</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/fb.png" width="100px">
+        </div>
+        <div class="card-footer">
+          <h4>Rating 4.5</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-half"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Rating Section -->
+
+<!-- Product Section -->
+<div class="container" id="products">
+  <h1>Our <span id="span">Products</span></h1>
+  <hr width="250px" class="bg-danger">
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s1.png" class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s2.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s3.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s4.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+&nbsp;
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s5.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s6.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s7.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <img src="Images/s1.png"class="img-fluid">
+          <div class="text-center">
+          <h4>Shirt 1</h4>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star"></i>
+          </div>
+            <div style=" display: flex; justify-content: space-between;">
+            <div id="price">$100</div>
+            <div><img src="Images/add.png" width="20px">
+            </div>
+          <div id="overlay">
+              <img src="Images/cart.png" width="30px">
+              <img src="Images/heart.png" width="30px">
+              <img src="Images/view.png" width="30px">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End of Product Section -->
+
+<!-- About Section -->
+<div class="container" id="products">
+  &nbsp;
+  <h1>About <span id="span">E-commerce App</span></h1>
+  <hr width="250px" class="bg-danger">
+  <div class="row justify-content-around align-items-center">
+    <div class="col-md-6">
+      <img src="Images/Background.png" class="img-fluid">
+    </div>
+    <div class="col-md-6" id="E-commerce">
+      <h2><span>E-commerce App</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat.</p>
+    </div>
+  </div>
+</div>
+<!-- End of about section -->
+
+<!-- Pride section -->
+<div class="container" id="products">
+  &nbsp;
+  <h1>About Our <span id="span">Pride Products</span></h1>
+  <hr width="250px" class="bg-danger">
+<div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#imageCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/so1.png" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/so2.png" class="d-block w-100" alt="Slide 2">
+        </div>
+        <div class="carousel-item">
+            <img src="Images/so3.png" class="d-block w-100" alt="Slide 3">
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+</div>
+<!-- End of Pride section -->
+
+<!-- Register Modal -->
+<div class="modal" id="registermodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">Register</div>
+      <div class="modal-Body">
+        <form>
+          <input type="text" placeholder="Fullname" class="form-control">
+          <input type="email" placeholder="Email ID" class="form-control">
+          <input type="Password" placeholder="Password" class="form-control">
+          <input type="tel" placeholder="Contact" class="form-control">
+          <button class="btn btn-success">Register</button>
+        </form>
+        <p class="mt-2">Already Have an account? <a href="#loginmodal" data-toggle="modal" data-dismiss="modal">sign In</a></p>
+      </div>
+      <div class="modal-Footer"><button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Register Modal -->
+
+<!-- Login Modal -->
+<div class="modal" id="loginmodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">Login</div>
+      <div class="modal-Body">
+        <form>
+          <input type="email" placeholder="Email ID" class="form-control">
+          <input type="Password" placeholder="Password" class="form-control">
+          <button class="btn btn-success">Login</button>
+        </form>
+        <p class="mt-2">New Here? <a href="#registermodal" data-toggle="modal" data-dismiss="modal">Register now</a></p>
+      </div>
+      <div class="modal-Footer"><button class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of login Modal -->
+
+    <!-- CDN of JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+        <!-- End of JS CDN -->
+  </body>
+</html>
